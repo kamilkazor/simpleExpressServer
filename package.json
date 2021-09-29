@@ -1,0 +1,18 @@
+{
+  "name": "simpleserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Kamil Kazor",
+    "email": "79405091+kamilkazor@users.noreply.github.com",
+    "url": "https://github.com/kamilkazor"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
