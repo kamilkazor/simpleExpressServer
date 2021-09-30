@@ -17,15 +17,17 @@ Now you can visit http://localhost:3000/ in your browser to see the site.
 
 <br>
 
-:exclamation: You can edit or replace/add files inside appDirectory. Your html file has to be named index.html and be placed directly inside appDirectory. The root directory for all other files (.js .css .img ...) is public directory.
+:exclamation: You can edit or replace/add files inside appDirectory. Your html file has to be named index.html and be placed directly inside appDirectory.
 
-You can simply change that by editing app.js and indexRouter.js:
+You can simply change that by editing indexRouter.js:
 ```bash
 # Edit this line in ./routes/indexRouter.js to change name and path to your html file
 let index = fs.createReadStream('./appDirectory/index.html');
 
-# Edit this line in ./app.js to change root directory of your other files
-app.use(express.static('./appDirectory/public'));
+# MORE SETTINGS:
+
+# Edit this line in ./app.js to change static directory to your other files
+app.use(express.static('./appDirectory'));
 
 # In ./app.js you can also change port on which server is listening
 const PORT = '3000';
