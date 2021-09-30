@@ -13,7 +13,7 @@ server.listen(PORT, () => {
 });
 
 //Setting express middleware
-app.use(express.static('./appDirectory/public')); //You can change path to './appDirectory' if you want to host files from same directory as index.html
+app.use(express.static('./appDirectory'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
